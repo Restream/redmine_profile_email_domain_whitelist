@@ -1,0 +1,29 @@
+<div class="email_domain_settings">
+  <p><%= l(:redmine_profile_email_domain_whitelist_settings) %></p>
+  <fieldset>
+    <p>
+      <label><%= l(:mail_not_whitelisted_message)%></label>
+      <%= text_area_tag('settings[mail_domain_not_whitelisted_message]',
+                         @settings['mail_domain_not_whitelisted_message'])
+       %>
+    </p>
+  </fieldset>
+
+  <table class="list domain_table">
+    <thead>
+      <tr>
+        <th colspan="2"><%= l(:allowed_email_domains)%></th>
+      </tr>
+    </thead>
+      <%= render :partial => 'email_domain', :collection => @settings['allowed_email_domains'] %>
+    <tr class="controls">
+      <td>
+        <a class="add" data-tag='<%= render "email_domain" %>'>
+          <%= l(:add_domain) %>
+        </a>
+      </td>
+      <td width="20%">
+      </td>
+    </tr>
+  </table>
+</div>

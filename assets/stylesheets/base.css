@@ -1,0 +1,17 @@
+.email_domain_settings input, .email_domain_settings textarea {
+  width: 30em;
+}
+
+.domain_table a {
+  text-decoration: none;
+  border-bottom: 1px dashed;
+  cursor: pointer;
+}
+
+.domain_table .add {
+  margin-left: 2.5em;
+}
+
+.domain_table .icon {
+  font-size: 1.2em;
+}

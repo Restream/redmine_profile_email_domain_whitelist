@@ -1,0 +1,6 @@
+ru:
+  redmine_profile_email_domain_whitelist_settings: "Настройка списка допустимых E-Mail доменов"
+  allowed_email_domains: "Допустимые домены электронной почты"
+  mail_not_whitelisted_message: "Сообщение о недопустимости домена"
+  remove_domain: "Удалить домен"
+  add_domain: "Добавить домен"
