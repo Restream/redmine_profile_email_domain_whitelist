@@ -4,7 +4,7 @@ Redmine::Plugin.register :redmine_profile_email_domain_whitelist do
   name 'redmine profile email domain whitelist'
   author 'undev.ru, nettsundere'
   description 'Profile email domain whitelist for redmine.'
-  version '1.1'
+  version '1.2'
 
   default_settings = {
     'allowed_email_domains' => [],
