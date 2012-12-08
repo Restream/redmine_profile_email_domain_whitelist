@@ -15,7 +15,7 @@ module RedmineProfileEmailDomainWhitelist
 
           p_s = Setting.plugin_redmine_profile_email_domain_whitelist
           whitelisted_domains = p_s['allowed_email_domains']
-          unless whitelisted_domains.include?(mail_domain)
+          unless whitelisted_domains.any? { |d| Unicode.downcase(d) == Unicode.downcase(mail_domain) }
             mail_not_whitelisted_message = p_s['mail_domain_not_whitelisted_message']
             errors.add(:mail, mail_not_whitelisted_message)
           end

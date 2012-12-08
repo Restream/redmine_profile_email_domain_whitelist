@@ -5,7 +5,7 @@ class UserTest < ActiveSupport::TestCase
 
   def setup
     settings_stub = {
-      'allowed_email_domains' => ['gooddomain.com'],
+      'allowed_email_domains' => ['gooDDomain.com'],
       'mail_domain_not_whitelisted_message' => "denied. Your E-Mail domain isn't allowed by redmine admin"
     }
 
@@ -16,10 +16,10 @@ class UserTest < ActiveSupport::TestCase
   def test_only_whitelisted_email_can_be_used_by_user
     some_user = User.generate_with_protected(:admin => false)
 
-    some_user.mail = "bad@gooddomain.com.ru"
+    some_user.mail = "bad@gooddomain.ru"
     assert !some_user.valid?
 
-    some_user.mail = "good@gooddomain.com"
+    some_user.mail = "good@GoOddomAiN.com"
     assert some_user.valid?
   end
 
