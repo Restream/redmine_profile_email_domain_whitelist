@@ -2,6 +2,12 @@
   <p><%= l(:redmine_profile_email_domain_whitelist_settings) %></p>
   <fieldset>
     <p>
+      <label for="w_e"><%= l(:whitelist_enabled) %></label>
+      <%= check_box_tag('settings[whitelist_enabled]',
+                      '1',
+                      @settings['whitelist_enabled'], :id => "w_e", :style => "width: 3em") %>
+    </p>
+    <p>
       <label><%= l(:mail_not_whitelisted_message)%></label>
       <%= text_area_tag('settings[mail_domain_not_whitelisted_message]',
                          @settings['mail_domain_not_whitelisted_message'])

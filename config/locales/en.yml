@@ -4,3 +4,4 @@ en:
   mail_not_whitelisted_message: "Domain is not in whitelist message"
   remove_domain: "Remove domain"
   add_domain: "Add domain"
+  whitelist_enabled: "Enabled?"

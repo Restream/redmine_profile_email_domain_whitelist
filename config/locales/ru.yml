@@ -4,3 +4,4 @@ ru:
   mail_not_whitelisted_message: "Сообщение о недопустимости домена"
   remove_domain: "Удалить домен"
   add_domain: "Добавить домен"
+  whitelist_enabled: "Использовать"
