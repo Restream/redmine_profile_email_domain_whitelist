@@ -4,8 +4,11 @@ module RedmineProfileEmailDomainWhitelist
       class << self
         def included(base)
           base.class_eval do
-            before_filter :combine_mail_name_and_mail_domain_into_mail, :only => :register
-            before_filter :init_whitelisted_domains, :only => :register
+            with_options :only => :register do |c|
+              c.before_filter :combine_mail_name_and_mail_domain_into_mail
+              c.before_filter :init_whitelisted_domains
+              c.before_filter :init_mail_banner_message
+            end
           end
         end
       end
@@ -16,6 +19,11 @@ module RedmineProfileEmailDomainWhitelist
           @whitelisted_domains = p_s['allowed_email_domains']
         end
         true
+      end
+
+      def init_mail_banner_message
+        p_s = Setting.plugin_redmine_profile_email_domain_whitelist
+        @mail_banner_message = p_s['mail_banner_message']
       end
 
       def combine_mail_name_and_mail_domain_into_mail

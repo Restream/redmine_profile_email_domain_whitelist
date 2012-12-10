@@ -20,6 +20,7 @@
     <%= label_tag t(:field_mail) + '<span class="required"> *</span>', nil %>
     <%= text_field_tag('user[mail_name]', @user.mail_name) %>@
     <%= select_tag 'user[mail_domain]', options_from_collection_for_select(@whitelisted_domains, 'to_s', 'to_s', @user.mail_domain) %>
+    <p><%= @mail_banner_message %></p>
   <% else %>
     <p><%= f.text_field :mail, :required => true %></p>
   <% end %>

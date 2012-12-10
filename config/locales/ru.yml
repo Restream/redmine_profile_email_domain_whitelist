@@ -5,3 +5,4 @@ ru:
   remove_domain: "Удалить домен"
   add_domain: "Добавить домен"
   whitelist_enabled: "Использовать"
+  mail_banner_message: "Сообщение у поля ввода почты"

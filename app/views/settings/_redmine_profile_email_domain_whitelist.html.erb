@@ -13,6 +13,12 @@
                          @settings['mail_domain_not_whitelisted_message'])
        %>
     </p>
+    <p>
+      <label><%= l(:mail_banner_message)%></label>
+      <%= text_area_tag('settings[mail_banner_message]',
+                         @settings['mail_banner_message'])
+       %>
+    </p>
   </fieldset>
 
   <table class="list domain_table">

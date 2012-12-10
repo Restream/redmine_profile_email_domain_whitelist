@@ -5,3 +5,4 @@ en:
   remove_domain: "Remove domain"
   add_domain: "Add domain"
   whitelist_enabled: "Enabled?"
+  mail_banner_message: "Mail banner message"
