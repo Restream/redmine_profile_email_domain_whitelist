@@ -6,6 +6,7 @@ class UserTest < ActiveSupport::TestCase
   def setup
     @settings_stub = {
       'whitelist_enabled' => true,
+      'mail_banner_message' => '',
       'allowed_email_domains' => ['gooDDomain.com'],
       'mail_domain_not_whitelisted_message' => "denied. Your E-Mail domain isn't allowed by redmine admin"
     }

@@ -1,9 +1,12 @@
+require File.dirname(__FILE__) + '/../test_helper'
+
 class AccountControllerTest < ActionController::TestCase
   fixtures :users, :roles
 
   def setup
     @settings_stub = {
       'whitelist_enabled' => true,
+      'mail_banner_message' => '',
       'allowed_email_domains' => ['gooDDomain.com'],
       'mail_domain_not_whitelisted_message' => "denied. Your E-Mail domain isn't allowed by redmine admin"
     }
@@ -13,7 +16,7 @@ class AccountControllerTest < ActionController::TestCase
   end
 
   def test_should_render_register
-    get :resiter
+    get :register
     assert_response :success
   end
 
