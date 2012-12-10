@@ -1,3 +1,5 @@
+require 'unicode'
+
 module RedmineProfileEmailDomainWhitelist
   module Patches
     module UserPatch
