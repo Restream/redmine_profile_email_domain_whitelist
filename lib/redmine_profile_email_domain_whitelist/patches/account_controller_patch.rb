@@ -24,6 +24,7 @@ module RedmineProfileEmailDomainWhitelist
       def init_mail_banner_message
         p_s = Setting.plugin_redmine_profile_email_domain_whitelist
         @mail_banner_message = p_s['mail_banner_message']
+        true
       end
 
       def combine_mail_name_and_mail_domain_into_mail
