@@ -4,7 +4,7 @@ require 'dispatcher'
 require_dependency 'redmine_profile_email_domain_whitelist/hooks/view_layouts_base_html_head_hook'
 
 Redmine::Plugin.register :redmine_profile_email_domain_whitelist do
-  name 'redmine profile email domain whitelist'
+  name 'Redmine profile email domain whitelist'
   author 'undev.ru, nettsundere'
   description 'Profile email domain whitelist for redmine.'
   version '1.4'
