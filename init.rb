@@ -1,5 +1,4 @@
 require 'redmine'
-require 'dispatcher'
 
 require_dependency 'redmine_profile_email_domain_whitelist/hooks/view_layouts_base_html_head_hook'
 
@@ -20,7 +19,7 @@ Redmine::Plugin.register :redmine_profile_email_domain_whitelist do
            :partial => 'settings/redmine_profile_email_domain_whitelist')
 end
 
-Dispatcher.to_prepare do
+ActionDispatch::Callbacks.to_prepare  do
   User.send(:include, RedmineProfileEmailDomainWhitelist::Patches::UserPatch)
 
   AccountController.send(:include, RedmineProfileEmailDomainWhitelist::Patches::AccountControllerPatch)

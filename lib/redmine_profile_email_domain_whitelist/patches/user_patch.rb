@@ -6,7 +6,7 @@ module RedmineProfileEmailDomainWhitelist
       class << self
         def included(base)
           base.class_eval do
-            alias_method_chain :validate, :email_domain_check
+            validate :email_domain_check
           end
         end
       end
@@ -21,7 +21,7 @@ module RedmineProfileEmailDomainWhitelist
         Unicode.downcase(mail.split("@")[0])
       end
 
-      def validate_with_email_domain_check
+      def email_domain_check
         p_s = Setting.plugin_redmine_profile_email_domain_whitelist
         is_enabled = p_s['whitelist_enabled']
         if is_enabled && mail.present? && mail_changed? && !admin?
@@ -31,8 +31,6 @@ module RedmineProfileEmailDomainWhitelist
             errors.add(:mail, mail_not_whitelisted_message)
           end
         end
-
-        validate_without_email_domain_check
       end
     end
   end
