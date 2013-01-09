@@ -10,7 +10,7 @@ Redmine::Plugin.register :redmine_profile_email_domain_whitelist do
 
   default_settings = {
     'allowed_email_domains' => [],
-    'whitelist_enabled' => true,
+    'whitelist_enabled' => false,
     'mail_banner_message' => '',
     'mail_domain_not_whitelisted_message' => "denied. Your E-Mail domain isn't allowed by redmine admin"
   }
