@@ -6,7 +6,7 @@ Redmine::Plugin.register :redmine_profile_email_domain_whitelist do
   name 'Redmine profile email domain whitelist'
   author 'undev.ru, nettsundere'
   description 'Profile email domain whitelist for redmine.'
-  version '1.9'
+  version '1.9.1'
 
   default_settings = {
     'allowed_email_domains' => [],
@@ -20,7 +20,5 @@ Redmine::Plugin.register :redmine_profile_email_domain_whitelist do
 end
 
 ActionDispatch::Callbacks.to_prepare  do
-  User.send(:include, RedmineProfileEmailDomainWhitelist::Patches::UserPatch)
-
-  AccountController.send(:include, RedmineProfileEmailDomainWhitelist::Patches::AccountControllerPatch)
+  require 'redmine_profile_email_domain_whitelist'
 end

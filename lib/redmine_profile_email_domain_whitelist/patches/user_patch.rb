@@ -1,4 +1,7 @@
 require 'unicode'
+require 'project'
+require 'principal'
+require 'user'
 
 module RedmineProfileEmailDomainWhitelist
   module Patches
@@ -34,4 +37,8 @@ module RedmineProfileEmailDomainWhitelist
       end
     end
   end
+end
+
+unless User.included_modules.include?(RedmineProfileEmailDomainWhitelist::Patches::UserPatch)
+  User.send(:include, RedmineProfileEmailDomainWhitelist::Patches::UserPatch)
 end
