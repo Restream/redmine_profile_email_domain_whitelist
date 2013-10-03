@@ -1,4 +1,7 @@
-Redmine profile email domain whitelist
+# Redmine profile email domain whitelist
+
+[![Build Status](https://travis-ci.org/Undev/redmine_profile_email_domain_whitelist.png)](https://travis-ci.org/Undev/redmine_profile_email_domain_whitelist)
+[![Code Climate](https://codeclimate.com/github/Undev/redmine_profile_email_domain_whitelist.png)](https://codeclimate.com/github/Undev/redmine_profile_email_domain_whitelist)
 
 # License
 
