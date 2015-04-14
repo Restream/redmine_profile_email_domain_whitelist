@@ -33,7 +33,7 @@ The initial author is [Vladimir Kiselev](https://github.com/nettsundere/redmine_
 ## Usage
 
 The plugin enables you to specify the list of email domains allowed in Redmine. To do this, go to **Administration > Plugins** and click **Configure**.  
-![whitelist settings](whitelistg_1.PNG)
+![whitelist settings](whitelist_1.PNG)
 
 Note that the configured settings will be applied only if you select the **Enabled** check box.
 
