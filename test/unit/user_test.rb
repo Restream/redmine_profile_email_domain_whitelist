@@ -8,7 +8,7 @@ class UserTest < ActiveSupport::TestCase
       'whitelist_enabled' => true,
       'mail_banner_message' => '',
       'allowed_email_domains' => ['gooDDomain.com', 'init.com'],
-      'mail_domain_not_whitelisted_message' => "denied. Your E-Mail domain isn't allowed by redmine admin"
+      'mail_domain_not_whitelisted_message' => "denied. Your email domain isn't allowed by Redmine administrator."
     }
 
     Setting.stubs(:plugin_redmine_profile_email_domain_whitelist) \
