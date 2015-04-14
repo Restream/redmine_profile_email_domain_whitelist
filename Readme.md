@@ -30,6 +30,8 @@ The initial author is [Vladimir Kiselev](https://github.com/nettsundere/redmine_
 
 3. Restart Redmine.
 
+Now you should be able to see the plugin in **Administration > Plugins**.
+
 ## Usage
 
 The plugin enables you to specify the list of email domains allowed in Redmine. To do this, go to **Administration > Plugins** and click **Configure**.  
