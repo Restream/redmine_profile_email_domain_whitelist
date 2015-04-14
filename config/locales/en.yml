@@ -1,8 +1,8 @@
 en:
   redmine_profile_email_domain_whitelist_settings: "Email domain whitelist settings"
   allowed_email_domains: "Allowed email domains"
-  mail_not_whitelisted_message: "Domain is not in whitelist message"
+  mail_not_whitelisted_message: "Message if domain is not in whitelist"
   remove_domain: "Remove domain"
   add_domain: "Add domain"
-  whitelist_enabled: "Enabled?"
+  whitelist_enabled: "Enabled"
   mail_banner_message: "Mail banner message"
