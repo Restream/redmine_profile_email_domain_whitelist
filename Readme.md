@@ -45,6 +45,10 @@ In the **Message if domain is not in whitelist** field, you can specify a custom
 
 In the **Mail banner message** field, you can add a text prompt that will be displayed below the **Email** field on the **New user** page.
 
+## Maintainers
+
+Danil Tashkinov, [github.com/nodecarter](https://github.com/nodecarter)
+
 ## License
 
 Copyright (c) 2015 Undev

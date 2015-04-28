@@ -4,7 +4,7 @@ require_dependency 'redmine_profile_email_domain_whitelist/hooks/view_layouts_ba
 
 Redmine::Plugin.register :redmine_profile_email_domain_whitelist do
   name 'Redmine profile email domain whitelist'
-  author 'undev.ru, nettsundere'
+  author 'Undev, nettsundere'
   description 'This plugin enables configuring the email domain whitelist for Redmine.'
   version '1.9.1'
 
