@@ -41,3 +41,8 @@ module RedmineProfileEmailDomainWhitelist
     end
   end
 end
+
+unless AccountController.included_modules.include?(RedmineProfileEmailDomainWhitelist::Patches::AccountControllerPatch)
+  AccountController.send(:include, RedmineProfileEmailDomainWhitelist::Patches::AccountControllerPatch)
+end
+
