@@ -1,7 +1,7 @@
 require File.dirname(__FILE__) + '/../test_helper'
 
 class AccountControllerTest < ActionController::TestCase
-  fixtures :users, :roles
+  fixtures :users, :email_addresses, :roles
 
   def setup
     @settings_stub = {

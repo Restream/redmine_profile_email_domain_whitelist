@@ -14,12 +14,12 @@ module RedmineProfileEmailDomainWhitelist
       end
 
       def mail_domain
-        return '' if mail.empty?
+        return '' if mail.blank?
         mail.split('@')[-1].mb_chars.downcase.to_s
       end
 
       def mail_name
-        return '' if mail.empty?
+        return '' if mail.blank?
         mail.split('@')[0].mb_chars.downcase.to_s
       end
 
