@@ -4,33 +4,33 @@
     <p>
       <label for="w_e"><%= l(:whitelist_enabled) %></label>
       <%= check_box_tag('settings[whitelist_enabled]',
-                      '1',
-                      @settings['whitelist_enabled'], :id => "w_e", :style => "width: 3em") %>
+          '1',
+          @settings['whitelist_enabled'], id: 'w_e', style: 'width: 3em') %>
     </p>
     <p>
-      <label><%= l(:mail_not_whitelisted_message)%></label>
+      <label><%= l(:mail_not_whitelisted_message) %></label>
       <%= text_area_tag('settings[mail_domain_not_whitelisted_message]',
-                         @settings['mail_domain_not_whitelisted_message'])
-       %>
+          @settings['mail_domain_not_whitelisted_message'])
+      %>
     </p>
     <p>
-      <label><%= l(:mail_banner_message)%></label>
+      <label><%= l(:mail_banner_message) %></label>
       <%= text_area_tag('settings[mail_banner_message]',
-                         @settings['mail_banner_message'])
-       %>
+          @settings['mail_banner_message'])
+      %>
     </p>
   </fieldset>
 
   <table class="list domain_table">
     <thead>
-      <tr>
-        <th colspan="2"><%= l(:allowed_email_domains)%></th>
-      </tr>
+    <tr>
+      <th colspan="2"><%= l(:allowed_email_domains) %></th>
+    </tr>
     </thead>
-      <%= render :partial => 'email_domain', :collection => @settings['allowed_email_domains'] %>
+    <%= render partial: 'email_domain', collection: @settings['allowed_email_domains'] %>
     <tr class="controls">
       <td>
-        <a class="add" data-tag='<%= render "email_domain" %>'>
+        <a class="add" data-tag='<%= render 'email_domain', email_domain: nil %>'>
           <%= l(:add_domain) %>
         </a>
       </td>

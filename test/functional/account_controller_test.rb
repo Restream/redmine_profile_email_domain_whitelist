@@ -5,9 +5,9 @@ class AccountControllerTest < ActionController::TestCase
 
   def setup
     @settings_stub = {
-      'whitelist_enabled' => true,
-      'mail_banner_message' => '',
-      'allowed_email_domains' => ['gooDDomain.com'],
+      'whitelist_enabled'                   => true,
+      'mail_banner_message'                 => '',
+      'allowed_email_domains'               => ['gooDDomain.com'],
       'mail_domain_not_whitelisted_message' => "denied. Your email domain isn't allowed by Redmine administrator."
     }
 

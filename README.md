@@ -1,15 +1,13 @@
 # Redmine Profile Email Domain Whitelist Plugin
 
-[![Build Status](https://travis-ci.org/Undev/redmine_profile_email_domain_whitelist.png)](https://travis-ci.org/Undev/redmine_profile_email_domain_whitelist)
-[![Code Climate](https://codeclimate.com/github/Undev/redmine_profile_email_domain_whitelist.png)](https://codeclimate.com/github/Undev/redmine_profile_email_domain_whitelist)
+[![Build Status](https://travis-ci.org/Restream/redmine_profile_email_domain_whitelist.svg?branch=master)](https://travis-ci.org/Restream/redmine_profile_email_domain_whitelist)
+[![Code Climate](https://codeclimate.com/github/Restream/redmine_profile_email_domain_whitelist/badges/gpa.svg)](https://codeclimate.com/github/Restream/redmine_profile_email_domain_whitelist)
 
 This plugin enables you to configure a list of email domains that can be specified in Redmine user profiles.
 
-The initial author is [Vladimir Kiselev](https://github.com/nettsundere/redmine_profile_email_domain_whitelist).
+The initial author is [Vladimir Kiselev](https://github.com/nettsundere).
 
 ## Installation
-
-*These installation instructions are based on Redmine 2.6.0. For instructions for previous versions, see [Redmine wiki](http://www.redmine.org/projects/redmine/wiki/Plugins).*
 
 1. To install the plugin
     * Download the .ZIP archive, extract files and copy the plugin directory into *#{REDMINE_ROOT}/plugins*.
@@ -22,7 +20,7 @@ The initial author is [Vladimir Kiselev](https://github.com/nettsundere/redmine_
  
       Copy the plugin from GitHub using the following command:
 
-            git clone https://github.com/Undev/redmine_profile_email_domain_whitelist.git plugins/redmine_profile_email_domain_whitelist
+            git clone https://github.com/Restream/redmine_profile_email_domain_whitelist.git plugins/redmine_profile_email_domain_whitelist
 
 2. Install the required gems:  
 
@@ -35,7 +33,7 @@ Now you should be able to see the plugin in **Administration > Plugins**.
 ## Usage
 
 The plugin enables you to specify the list of email domains allowed in Redmine. To do this, go to **Administration > Plugins** and click **Configure**.  
-![whitelist settings](whitelist_1.PNG)
+![whitelist settings](doc/whitelist_1.png)
 
 Note that the configured settings will be applied only if you select the **Enabled** check box.
 
@@ -51,7 +49,7 @@ Danil Tashkinov, [github.com/nodecarter](https://github.com/nodecarter)
 
 ## License
 
-Copyright (c) 2015 Undev
+Copyright (c) 2016 Restream
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
